@@ -6,7 +6,7 @@ import (
 )
 
 func TestPailliar(t *testing.T) {
-	pub, pri, err := KeyGeneration(1024)
+	pub, pri, err := KeyGeneration(2048)
 	if err != nil {
 		t.Errorf("error %v", err)
 		return
